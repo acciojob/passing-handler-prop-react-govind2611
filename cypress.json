@@ -1,1 +1,4 @@
-{}
+{
+
+    "responseTimeout": 120e3
+}
