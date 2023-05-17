@@ -1,14 +1,9 @@
-
 import React from 'react'
-import '../styles/Child.css'
 
-const Selection = (props) => {
+export default function Selection() {
   return (
-    <div className='fix-box subheading' id={props.id} onClick={()=>{props.applyColor(props.label)}}>
-        Selection
-        {/* {props.label} */}
+    <div>
+      <button className='fix-box'></button>
     </div>
   )
 }
-
-export default Selection
