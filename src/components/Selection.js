@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-export default function Selection() {
+let Selection = ({ keys, applyColor }) => {
+  function colorChange(e) {
+    e.target.style.backgroundColor = applyColor().background;
+  }
+
   return (
     <div>
-      <button className='fix-box'></button>
+      <div className={keys} onClick={colorChange}></div>
     </div>
-  )
-}
+  );
+};
+
+export default Selection;
