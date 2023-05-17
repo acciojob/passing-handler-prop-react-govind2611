@@ -24,7 +24,6 @@ html, body {
     display: flex;
     margin: auto;
     width: fit-content;
-    border: 2px solid red;
 }
 
 button {
@@ -52,17 +51,16 @@ button {
     background: rgb(44, 209, 88);
     color: black;
 }
-
-.row{
-   display: flex;
-   flex-direction: row;
-   gap: 10px;
-   justify-content: center;
-}
-
-.selection1,.selection2, .selection3{
-    width:  200px;
+.selection1,.selection2,.selection3{
+    width: 200px;
     height: 200px;
-    border: 1px solid white;
-    margin: auto;
-} 
+    border: 2px solid rgb(252, 244, 244);
+}
+.selection1,.selection2,.selection3:hover{
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
